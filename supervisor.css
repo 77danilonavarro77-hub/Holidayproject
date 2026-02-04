@@ -38,11 +38,11 @@
     background:#157332;
 }
 
-.content{
+.principal{
     flex:1;
     background:var(--gris);
 }
-.topbar{
+.titulo{
     background:white;
     padding:20px;
     display:flex;
@@ -50,7 +50,7 @@
     align-items:center;
 }
 
-.btn{
+.boton1{
     background:var(--verde);
     color:white;
     border:none;
@@ -59,10 +59,10 @@
     border-radius:5px;
 }
 
-.btn:hover{
+.boton1:hover{
     background:#157332;
 }
-.tabla-contenedor{
+.tabla{
     padding:25px;
 }
 
