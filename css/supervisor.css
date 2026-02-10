@@ -1,7 +1,36 @@
-.fondo {
-    height: calc(139vh - 200px);
-    background-image: url("../imagenes/fondo.jpeg");
-    background-size: cover;
-    background-position: center;
+.contenedor {
+    display: flex;
+    width: 20vw;
+    height: 100vh;
+    border: 2px solid black;
 }
 
+.columnaIzquierda {
+    width: 250px;
+    background-color: #0f4d32;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.linea {
+    width: 100vw;
+    height: 7vw;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: b;
+}
