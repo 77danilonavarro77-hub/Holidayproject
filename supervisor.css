@@ -132,6 +132,7 @@ h1{
 h2{
     margin-left:10px;
     color:var(--core-green);
+    
 }
 .seccion {
     display: none;
@@ -140,6 +141,8 @@ h2{
 
 .seccion.activa {
     display: block;
+    justify-self: center;
+    width: 1000px;
 }
 .contenido-principal{
     background: white;
@@ -150,7 +153,7 @@ h2{
 }
 
 .Viñetas{
-    max-width: 500px;
+    max-width: 10000px;
 }
 .campo{
     display: flex;

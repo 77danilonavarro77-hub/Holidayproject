@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Panel Supervisor - Ó rdenes</title>
+<title></title>
 <link rel="stylesheet" href="supervisor.css">
 </head>
 
@@ -27,7 +27,7 @@
     <main class="content">
 
         <header class="topbar">
-            <h1>Panel del Supervisor</h1>
+            <h1>Supervisor</h1>
             <button class="btn">Perfil</button>
         </header>
 
@@ -51,7 +51,16 @@
                     </div>
                     <div class="campo">
                         <label>Descrpción del problema</label>
-                        <textarea placeholder="Describa el problema"></textarea>
+                        <textarea placeholder="Hab: Problema de habitación"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label>Prioridad</label>
+                        <select>
+                            <option>Seleccione la prioridad</option>
+                            <option>Alta</option>
+                            <option>Intermedio</option>
+                            <option>Baja</option>
+                        </select>
                     </div>
                     <div class="campo">
                         <label>Fecha</label>
@@ -63,9 +72,33 @@
 
             <section id="ordenes" class="seccion">
                 <h2>Órdenes</h2>
-                <p>Listado de órdenes existentes.</p>
+                <form class="Viñetas">
+                    <table border="1">
+                        <thead>
+                                <tr>
+                                    <th>No. Orden</th>
+                                    <th>Tecnico Asginado</th>
+                                    <th>Prioridad</th>
+                                    <th>Descrpción</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Operario1</td>
+                                <td>Alta</td>                                
+                                <td>Hab: 0710 no funciona el televisor</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Operario2</td>
+                                <td>Media</td>
+                                <td>Hab: 0605 tiene baño tapado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
             </section>
-
             <section id="tecnicos" class="seccion">
                 <h2>Técnicos</h2>
                 <p>Información de técnicos asignados.</p>
