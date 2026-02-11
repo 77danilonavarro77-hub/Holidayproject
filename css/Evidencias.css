@@ -95,11 +95,10 @@ section {
   background-image: url("../img/logo2.jpg");
   background-size: cover;      
   background-position: center; 
-  background-repeat: no-repeat;
 }
 
 
-.tabla-Evidencias {
+.tabla-evidencias {
     position: absolute;
     top: 90px;
     right: 0%;
@@ -110,7 +109,7 @@ section {
     margin-bottom: 20px;
 }
 
-.tabla-Evidencias h2 {
+.tabla-evidencias h2 {
     color: #0f4d32;
 }
 
