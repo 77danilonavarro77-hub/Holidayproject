@@ -19,8 +19,8 @@ body {
 
 #titulo {
     position: absolute;
-    left: 35%;
-    top: 5%;
+    align-items: center;
+    right: 600px;
     color: #0f4d32;
 }
 

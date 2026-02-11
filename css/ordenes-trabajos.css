@@ -18,8 +18,8 @@ body {
 
 #titulo {
     position: absolute;
-    left: 35%;
-    top: 5%;
+    align-items: center;
+    right: 600px;
     color: #0f4d32;
 }
 
@@ -142,17 +142,17 @@ tr:hover {
 }
 
 
-.pendiente {
+#pendiente {
     color: orange;
     font-weight: bold;
 }
 
-.proceso {
+#proceso {
     color: blue;
     font-weight: bold;
 }
 
-.finalizado {
+#finalizado {
     color: green;
     font-weight: bold;
 }
