@@ -2,73 +2,86 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Panel Supervisor - Órdenes</title>
+<title>Panel Supervisor - Ó rdenes</title>
 <link rel="stylesheet" href="supervisor.css">
 </head>
 
 <body>
 
 <div class="todito">
+
     <aside class="barrad">
-        <h2>Holiday Inn</h2>
+        <div class="logoinicial">
+            <img src="imagen1.jpg.jpeg" class="imagen1">
+        </div>
+
         <ul>
-            <li>Dashboard</li>
-            <li>Crear Orden</li>
-            <li>Órdenes</li>
-            <li>Técnicos</li>
-            <li>Reportes</li>
-            <li>Cerrar Sesión</li>
+            <li onclick="mostrarSeccion('crear')">Crear Orden</li>
+            <li onclick="mostrarSeccion('ordenes')">Órdenes</li>
+            <li onclick="mostrarSeccion('tecnicos')">Técnicos</li>
+            <li onclick="mostrarSeccion('reportes')">Reportes</li>
+            <li onclick="cerrarSesion()">Cerrar Sesión</li>
         </ul>
     </aside>
-    <main class="principal">
-        <header class="titulo">
+
+    <main class="content">
+
+        <header class="topbar">
             <h1>Panel del Supervisor</h1>
-            <button class="boton1">+ Nueva Orden</button>
+            <button class="btn">Perfil</button>
         </header>
-        <section class="tabla">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Área</th>
-                        <th>Descripción</th>
-                        <th>Técnico</th>
-                        <th>Estado</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td>Habitación 203</td>
-                        <td>Aire acondicionado dañado</td>
-                        <td>Carlos</td>
-                        <td class="pendiente">Pendiente</td>
-                        <td><button class="ver">Ver</button></td>
-                    </tr>
 
-                    <tr>
-                        <td>002</td>
-                        <td>Cocina</td>
-                        <td>Fuga de agua</td>
-                        <td>Ana</td>
-                        <td class="proceso">En proceso</td>
-                        <td><button class="ver">Ver</button></td>
-                    </tr>
+        <div class="contenido-principal">
 
-                    <tr>
-                        <td>003</td>
-                        <td>Lobby</td>
-                        <td>Lámpara dañada</td>
-                        <td>Juan</td>
-                        <td class="finalizado">Finalizado</td>
-                        <td><button class="ver">Ver</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <section id="crear" class="seccion activa">
+                <h2>Crear Orden</h2>
+                <form class="Viñetas">
+                    <div class="campo">
+                         <label>Numero de Orden</label>
+                         <input type="text" placeholder="Ej: 01">
+                    </div>
+                    <div class="campo">
+                        <label> Tecnico asignado</label>
+                        <select>
+                            <option>Seleccione un Tecnico</option>
+                            <option>Operario 1</option>
+                            <option> Operaio 2</option>
+                            <option> Operario 3</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Descrpción del problema</label>
+                        <textarea placeholder="Describa el problema"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label>Fecha</label>
+                        <input type="date">
+                    </div>
+                    <button type="submit" class="btn">Crear Orden</button>
+                </form>
+            </section>
 
-        </section>
+            <section id="ordenes" class="seccion">
+                <h2>Órdenes</h2>
+                <p>Listado de órdenes existentes.</p>
+            </section>
+
+            <section id="tecnicos" class="seccion">
+                <h2>Técnicos</h2>
+                <p>Información de técnicos asignados.</p>
+            </section>
+
+            <section id="reportes" class="seccion">
+                <h2>Reportes</h2>
+                <p>Reportes y estadísticas.</p>
+            </section>
+
+        </div>
 
     </main>
 
+</div>
 
+<script src="supervisor.js"></script>
+</body>
+</html>
