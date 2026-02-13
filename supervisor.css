@@ -1,3 +1,32 @@
+@media (max-width: 900px){
+
+    .todito{
+        flex-direction: column;
+    }
+
+    .barrad{
+        width: 100%;
+        text-align: center;
+    }
+
+    .barrad ul{
+        margin-top: 20px;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .seccion.activa{
+        max-width: 100%;
+    }
+
+    table{
+        font-size: 12px;
+    }
+}
+
+
 *{
     margin:0;
     padding:0;
