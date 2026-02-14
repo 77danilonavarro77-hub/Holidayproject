@@ -189,3 +189,6 @@ h2{
     flex-direction: column;
     margin-bottom: 15px;
 }
+.btn:hover{
+    cursor: pointer;
+}

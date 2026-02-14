@@ -54,6 +54,23 @@
                         <textarea placeholder="Hab: Problema de habitación"></textarea>
                     </div>
                     <div class="campo">
+                        <label>Ambiente</label>
+                        <select id="ambiente" onchange="cambiarAmbiente()">
+                            <option value="">Seleccione ambiente</option>
+                            <option value="habitacion">Habitación</option>
+                            <option value="area_comun">Área común</option>
+                            <option value="oficina">Oficina</option>
+                        </select>
+                    </div>
+                    <div id="opcionesAmbiente" style="display:none">
+                        <label>Piso</label>
+                        <select id="Piso" onchange="cargarHabitaciones()">
+                            <option value="">Seleccione Piso</option>
+                            <option value="habitacion">Habitaicón</option>
+                            <option value="oficina">Oficinna</option>
+                        </select>
+                    </div>
+                    <div class="campo">
                         <label>Prioridad</label>
                         <select>
                             <option>Seleccione la prioridad</option>
@@ -109,11 +126,12 @@
                         <tr>
                             <td>001</td>
                             <td>Operario1</td>
-                            <td><button class="btn">deee</button></td>
+                            <td><button class="btn">Ver</button></td>
                         </tr>
                         <tr>
                             <td>002</td>
                             <td>Operario2</td>
+                            <td><button class="btn">Ver </button></td>
                         </tr>
                     </tbody>
                 </table>
